@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccilc52i1568c"]
+
+[ext_resource type="Script" path="res://addons/CameraBookmarks/bookmark_details.gd" id="1_tcsdk"]
+[ext_resource type="Texture2D" uid="uid://blbgex4kecyal" path="res://addons/CameraBookmarks/right_arrow.svg" id="2_j7i8x"]
+
+[node name="BookmarkDetails" type="HBoxContainer"]
+offset_right = 266.0
+offset_bottom = 31.0
+size_flags_horizontal = 3
+script = ExtResource("1_tcsdk")
+
+[node name="GoToBookmark" type="Button" parent="."]
+custom_minimum_size = Vector2(20, 10)
+layout_mode = 2
+icon = ExtResource("2_j7i8x")
+icon_alignment = 1
+expand_icon = true
+
+[node name="BookmarkName" type="LineEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "camera bookmark name"
+expand_to_text_length = true
+select_all_on_focus = true
+
+[node name="DeleteButton" type="Button" parent="."]
+layout_mode = 2
+text = "x"
